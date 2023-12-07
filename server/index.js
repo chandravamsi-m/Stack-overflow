@@ -1,5 +1,4 @@
 import express from 'express'
-import mongoose from 'mongoose'
 import cors from 'cors'
 import dotenv from 'dotenv'
 
@@ -15,7 +14,6 @@ app.use(cors());
 
 app.get('/',(req,res) =>{
     res.send("This is a stack overflow clone API")
-    res.setHeader("Access-Control")
 })
 
 app.use('/user', userRoutes)
